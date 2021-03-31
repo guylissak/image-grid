@@ -2,69 +2,46 @@
 
 ![Images Grid Demo](demo/demo.gif)
 
-## Available Scripts
+## Run the app locally
 
-In the project directory, you can run:
+Clone this repository and in the project directory run npm install
 
-### `yarn start`
+### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+start the app
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `npm test`
 
-### `yarn test`
+run the tests
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## App content
 
-### `yarn build`
+In this project i've developed an image-grid web application, the app has the following features:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Display different 5 images on each refresh button click.
+- View mode buttons, the user can select the view mode of the gallery (vertical/horizontal)
+- In addition i developed a logic to prevent image duplicates, this means new images will be different than previous time, and also among themselves.
+- I chose to work with CSS modules so each class will be applied only on the relevant component.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## tests
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### manual tests
 
-### `yarn eject`
+- manual testing of the app features, i made sure the images are random each click and that there are no duplicates.
+- verified the layout is responsive for mobile devices as well, and when shrinking the window size
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### automatic tests
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Developed unit tests that test the 'no-duplications' algorithm
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## What can be improved? (Next steps)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Display an error modal when something goes wrong, instead of showing H1 info
+- Add more features and tests (e.g add backend server and authentication so users will be able to save their
+  favorite pictures)
+- Deploy the app
+- test the app components
 
-## Learn More
+## Tech Stack
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+React, react hooks, jest

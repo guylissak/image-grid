@@ -1,0 +1,37 @@
+.buttonsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.activeButton {
+  border: none;
+  background-color: rgb(142, 135, 146);
+  padding: 10px 10px;
+}
+
+.passiveButton {
+  background-color: rgb(213, 208, 216);
+  border: none;
+  padding: 10px 10px;
+}
+
+.passiveButton:focus {
+  outline: 0;
+}
+
+.activeButton:focus {
+  outline: 0;
+}
+
+.horizontalImg {
+  width: 10px;
+  margin-right: 1px;
+  cursor: pointer;
+  filter: invert(100%);
+}
+
+.verticalImg {
+  width: 10px;
+  cursor: pointer;
+  filter: invert(100%);
+}

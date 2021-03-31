@@ -1,0 +1,33 @@
+.imagesContainer {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding-top: 100px;
+  /* position: relative; */
+}
+
+.flexContainer {
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+}
+
+.styledButton {
+  background-color: rgb(142, 135, 146);
+  font: inherit;
+  color: white;
+  border: 2px solid transparent;
+  padding: 8px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.styledButton:focus {
+  outline: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .imagesContainer {
+    display: inline;
+  }
+}

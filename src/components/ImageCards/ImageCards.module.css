@@ -1,0 +1,45 @@
+.cardRow {
+  width: 250px;
+  display: flex;
+  height: 450px;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  /* position: relative; */
+  padding: 16px;
+  font-size: 12px;
+  transition: all 0.3s linear;
+}
+
+.cardColumn {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: flex-start;
+  /* position: relative; */
+  padding: 16px;
+  font-size: 12px;
+  margin: auto;
+}
+
+.image {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 5px;
+  border-radius: 6%;
+}
+
+@media only screen and (max-width: 800px) {
+  .cardRow {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+    position: relative;
+    padding: 16px;
+    margin: auto;
+  }
+}

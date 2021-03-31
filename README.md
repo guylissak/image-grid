@@ -1,4 +1,4 @@
-# Demo
+# Images Grid
 
 ![Images Grid Demo](demo/demo.gif)
 

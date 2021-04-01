@@ -52,19 +52,19 @@ const Layout = () => {
       {hasError ? (
         <h1>Something went wrong, please try again later</h1>
       ) : (
-        <React.Fragment>
-          <div className={classes.flexContainer}>
+        <div className={classes.layoutContainer}>
+          <div className={classes.viewButtons}>
             <ViewModeButtons onViewModeChange={viewModeHandler} viewMode={viewMode} />
           </div>
           <div className={getViewModeStyle()}>
             <ImageCards images={images} viewMode={viewMode} />
           </div>
-          <div className={classes.flexContainer}>
+          <div className={classes.refreshButton}>
             <button onClick={onRefresh} className={classes.styledButton}>
               refresh
             </button>
           </div>
-        </React.Fragment>
+        </div>
       )}
     </React.Fragment>
   );

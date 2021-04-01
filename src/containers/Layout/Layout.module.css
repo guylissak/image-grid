@@ -1,15 +1,25 @@
 .imagesContainer {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   padding-top: 100px;
   /* position: relative; */
 }
 
-.flexContainer {
+.viewButtons {
+  display: flex;
+  padding-top: 50px;
+  justify-content: flex-end;
+}
+
+.refreshButton {
   display: flex;
   padding-top: 50px;
   justify-content: center;
+}
+
+.layoutContainer {
+  margin: 0 15vw;
 }
 
 .styledButton {
